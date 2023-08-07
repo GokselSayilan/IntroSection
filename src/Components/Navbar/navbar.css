@@ -1,0 +1,282 @@
+.navbar {}
+
+.navbarWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    padding-top: 30px;
+}
+
+.navbarLeft {
+    display: flex;
+    align-items: center;
+}
+
+.navbarLogo {
+    margin-right: 65px;
+    width: 85px;
+}
+
+.navbarLeftItems {
+    display: flex;
+}
+
+.navbarLeftItem {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbarLeftItemTitle {
+    color: #686868;
+    font-size: 14px;
+}
+
+
+
+.navbarLeftItemIcon {
+    margin-left: 10px;
+}
+
+.navbarRight {
+    display: flex;
+    align-items: center;
+}
+
+.navbarRightLogin {
+    margin-right: 40px;
+    color: #686868;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.navbarRightRegister {
+    width: 110px;
+    height: 45px;
+    border: 2px solid #686868;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+
+
+/* hovers */
+
+@media (min-width:1000px) {
+
+
+    .navbarLeftItemTitle:hover {
+        color: #151515;
+    }
+
+    .navbarRightLogin:hover {
+        color: #151515;
+    }
+
+    .navbarRightRegister:hover {
+        border: 2px solid #151515;
+        color: #151515;
+    }
+}
+
+
+
+/* dropdowns */
+
+.featuresDropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 150px;
+    height: 160px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 24px;
+    padding-right: 0;
+}
+
+.featuresDropdownItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+.featuresDropdownItemsIcon {
+    width: 14px;
+}
+
+.featuresDropdownItemsTitle {
+    font-size: 14px;
+    color: #686868;
+}
+
+.companyDropdown {
+    position: absolute;
+    top: 40px;
+    width: 120px;
+    height: 130px;
+    background: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    color: #686868;
+}
+
+.companyDropdownTitles {
+    padding: 24px;
+    padding-right: 0;
+}
+
+.companyDropdownTitle {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.navbarRightMobileMenu {
+    display: none;
+}
+
+.mobileMenuBox {
+    display: none;
+}
+
+@media (max-width:500px) {
+
+    .navbarWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    /* mobile menu */
+
+    .mobileMenuBox {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #15151569;
+    }
+
+    .mobileMenuBoxWrapper {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 65%;
+        background-color: white;
+        padding-top: 80px;
+        padding-left: 25px;
+    }
+
+    .mobileMenuCloseMenuIcon {
+        position: absolute;
+        top: 22px;
+        right: 20px;
+    }
+    
+
+    .navbarLeftItems {
+        display: none;
+    }
+
+    .navbarRightLogin,
+    .navbarRightRegister {
+        display: none;
+    }
+
+    .navbarRightMobileMenu {
+        display: block;
+    }
+
+    .mobileMenuNavbarLeftItems {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .mobileMenuFeaturesDropdownMenu {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .mobileMenuFeaturesDropdownItem {
+        display: flex;
+        padding-left: 24px;
+        gap: 16px;
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
+
+    .mobileMenuCompanyDropdownMenu {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .mobileMenuCompanyDropdownTitle {
+        display: flex;
+        padding-left: 24px;
+        gap: 16px;
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
+
+    .mobileMenuNavbarLeftItem {
+        display: flex;
+        flex-direction: column;
+        
+        gap: 16px;
+        color: #686868;
+    }
+
+    .mobileMenuNavbarLeftItemTitle {
+        color: #686868;
+        font-size: 16px;
+    }
+
+
+    .mobileMenuBoxBottom {
+        margin-top: 32px;
+        gap: 16px;
+        color: #686868;
+
+    }
+    
+    .mobileMenuNavbarRightLogin {
+        font-size: 14px;
+        text-align: center;
+        width: 90%;
+        margin-bottom: 16px;
+    }
+
+    .mobileMenuNavbarRightRegister {
+        font-size: 14px;
+        border: 1px solid #686868;
+        width: 195px;
+        height: 42px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+
+
+}
